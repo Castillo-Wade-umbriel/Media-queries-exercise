@@ -1,35 +1,44 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0px;
+    padding: 0;
 }
 
 body {
-    background-color: gray;
-    padding:10px
+    background-color: whitesmoke;
+    padding: 20px;
+    gap: 20px;
+
 }
 
 .alert-info {
-    background-color: teal;
+    background-color: #CBFFFE;
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 90vw;
-    padding: 20px;
-    margin: 0 auto
+    text-align: center;
+    width: calc(100% - 20px);
+    border: 1px lightgray  solid;
+    margin-bottom: .5em;
+    padding: 15px;
+
+
+}
+
+.alert-info a {
+    text-decoration: none;
 }
 
 h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: .5em;
 }
 
 .nav-links {
     display: flex;
+    gap: 5px;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     list-style: none;
 
 
@@ -37,25 +46,70 @@ h1 {
 
 li {
     display: flex;
-    background-color: deeppink;
     justify-content: center;
-    margin-bottom: .5em;
-    width: 90vw;
-    align-items: center;
+    text-align: center;
+    width: calc(100% - 20px);
+    background: lightgray;
+    margin-bottom: 1em;
+    padding: 10px;
 
 }
 
 a {
     justify-content: space-evenly;
 }
+a:hover {
+    color: deeppink;
+
+}
 
 .header-img {
     display: flex;
-   width: 90%;
-    margin:0;
     justify-content: center;
-    position: relative;
+    text-align: center;
+    width: calc(100% - 20px);
+    margin-bottom: 2em;
 }
-img{
-    width:100%
+
+img {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+h2  p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: calc(100% - 20px);
+    border: 1px solid grey ;
+}
+h2{
+    margin-bottom: .5em;
+}
+p{
+    margin-bottom: 2em;
+}
+.sub-section{
+    font-style: italic;
+    margin-bottom: 5em;
+}
+footer{
+    display: flex;
+ flex-direction: column;
+    justify-content: flex-end;
+}
+@media screen and (min-width: 800px) {
+    .alert-info{
+        display: none;
+    }
+    h1{
+        position: relative;
+        right: 45%;
+
+    }
+
+
+
+
 }
