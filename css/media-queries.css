@@ -103,10 +103,50 @@ footer{
     .alert-info{
         display: none;
     }
-    h1{
-        position: relative;
-        right: 45%;
 
+    h1{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+
+    }
+    .nav-links{
+       display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 0;
+        position: absolute;
+        top: 35px;
+        right: 20px;
+        width: 30%;
+
+    }
+    .nav-links li{
+        background: none;
+        padding:  0 ;
+        margin: 0 0 20px 0 ;
+    }
+    img{
+        position: relative;
+        top: 80px;
+
+    }
+    .main{
+        position: relative;
+        padding: 10px;
+        margin: 10px;
+        bottom: -35px;
+        background: grey;
+
+    }
+    .sub-section{
+        position: relative;
+
+
+    }
+    p{
+        margin: 0;
+        padding: 0;
     }
 
 
