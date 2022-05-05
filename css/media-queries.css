@@ -132,24 +132,26 @@ footer{
 
     }
     .main{
+        width: 70%;
         position: relative;
-        padding: 10px;
-        margin: 10px;
-        bottom: -35px;
-        background: grey;
+        bottom: -75px;
+        float: left;
+        padding-right: 5%;
+        display: inline-block;
 
     }
-    .sub-section{
+    .sub-section {
+        width: 25%;
+        display: inline-block;
         position: relative;
-
+        float: left;
+        bottom: -75px;
+    }
+    footer{
+        margin-top: 250px;
+        display: inline-block;
 
     }
-    p{
-        margin: 0;
-        padding: 0;
-    }
-
-
 
 
 }
