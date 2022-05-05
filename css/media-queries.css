@@ -5,8 +5,8 @@
 }
 
 body {
-    background-color: whitesmoke;
-    padding: 20px;
+    background-color: pink;
+    padding: 1em;
     gap: 20px;
 
 }
@@ -16,10 +16,11 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    width: calc(100% - 20px);
+    width: 100% ;
     border: 1px lightgray  solid;
     margin-bottom: .5em;
     padding: 15px;
+    border-radius: 6px;
 
 
 }
@@ -44,12 +45,14 @@ h1 {
 
 }
 
-li {
+nav ul li {
     display: flex;
     justify-content: center;
     text-align: center;
-    width: calc(100% - 20px);
+    width: 100%;
     background: lightgray;
+    border: 1px solid lightpink;
+    border-radius: 6px;
     margin-bottom: 1em;
     padding: 10px;
 
@@ -67,8 +70,9 @@ a:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    width: calc(100% - 20px);
+    width:100%;
     margin-bottom: 2em;
+    border-radius: 6px;
 }
 
 img {
@@ -76,6 +80,7 @@ img {
     justify-content: center;
     text-align: center;
     width: 100%;
+    border-radius: 6px;
 }
 h2  p {
     display: flex;
@@ -96,22 +101,29 @@ p{
 }
 footer{
     display: flex;
- flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
-@media screen and (min-width: 800px) {
-    .alert-info{
+footer ul li {
+    list-style: none;
+    float: left;
+    padding: .5em;
+}
+@media screen and (min-width: 750px) {
+    .alert-info {
         display: none;
     }
 
-    h1{
+    h1 {
         position: absolute;
         left: 20px;
         top: 20px;
 
     }
-    .nav-links{
-       display: flex;
+
+    .nav-links {
+        display: flex;
         flex-direction: row;
         justify-content: flex-end;
         gap: 0;
@@ -121,17 +133,20 @@ footer{
         width: 30%;
 
     }
-    .nav-links li{
+
+    .nav-links li {
         background: none;
-        padding:  0 ;
-        margin: 0 0 20px 0 ;
+        padding: 0;
+        margin: 0 0 20px 0;
     }
-    img{
+
+    img {
         position: relative;
         top: 80px;
 
     }
-    .main{
+
+    .main {
         width: 70%;
         position: relative;
         bottom: -75px;
@@ -140,6 +155,7 @@ footer{
         display: inline-block;
 
     }
+
     .sub-section {
         width: 25%;
         display: inline-block;
@@ -147,11 +163,16 @@ footer{
         float: left;
         bottom: -75px;
     }
-    footer{
+
+    footer {
+        width: 100%;
         margin-top: 250px;
-        display: inline-block;
+        display: flex;
 
     }
 
-
+    footer ul li {
+        list-style: none;
+        padding: .5em;
+    }
 }
